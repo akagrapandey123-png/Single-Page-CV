@@ -1,4 +1,6 @@
-Project URL: https://roadmap.sh/projects/single-page-cv
-git add README.md
-git commit -m "Add project URL to README"
-git push origin main
+git init
+git add .
+git commit -m "Initial commit of single page CV"
+git branch -M main
+git remote add origin https://github.com/akagrapandey123-png/single-page-cv.git
+git push -u origin main
