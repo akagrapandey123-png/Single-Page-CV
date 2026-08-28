@@ -9,233 +9,148 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
         }
 
         body {
-            background-color: #f4f6f9;
-            color: #333;
-            line-height: 1.6;
+            background-color: #ffffff;
+            color: #222222;
+            line-height: 1.45;
             padding: 40px 20px;
         }
 
         .resume-container {
-            max-width: 850px;
+            max-width: 700px;
             margin: 0 auto;
-            background: #ffffff;
-            padding: 40px;
-            border-radius: 8px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
         }
 
-        header {
-            border-bottom: 2px solid #2b6cb0;
-            padding-bottom: 20px;
-            margin-bottom: 25px;
-        }
-
-        header h1 {
+        h1 {
             font-size: 2.2rem;
-            color: #1a365d;
-            letter-spacing: 0.5px;
-        }
-
-        header .subtitle {
-            font-size: 1.1rem;
-            color: #2b6cb0;
-            font-weight: 600;
-            margin-top: 4px;
-        }
-
-        .contact-info {
-            margin-top: 12px;
-            font-size: 0.95rem;
-            color: #4a5568;
-            display: flex;
-            flex-wrap: wrap;
-            gap: 15px;
-        }
-
-        .contact-info a {
-            color: #2b6cb0;
-            text-decoration: none;
-        }
-
-        .contact-info a:hover {
-            text-decoration: underline;
-        }
-
-        section {
-            margin-bottom: 25px;
-        }
-
-        h2 {
-            font-size: 1.3rem;
-            color: #1a365d;
-            border-bottom: 1.5px solid #e2e8f0;
-            padding-bottom: 6px;
-            margin-bottom: 12px;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-        }
-
-        .item {
-            margin-bottom: 15px;
-        }
-
-        .item-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: baseline;
-            font-weight: 600;
-        }
-
-        .item-title {
-            font-size: 1rem;
-            color: #2d3748;
-        }
-
-        .item-date {
-            font-size: 0.85rem;
-            color: #718096;
-        }
-
-        .item-sub {
-            font-size: 0.95rem;
-            color: #4a5568;
-            font-style: italic;
+            color: #111111;
+            font-weight: 700;
             margin-bottom: 6px;
+        }
+
+        .role-title {
+            color: #28a745;
+            font-size: 1.05rem;
+            font-weight: 500;
+            margin-bottom: 12px;
+        }
+
+        .contact-block {
+            font-size: 0.95rem;
+            color: #222222;
+            margin-bottom: 24px;
+        }
+
+        .contact-block p {
+            margin-bottom: 2px;
+        }
+
+        .section-title {
+            color: #28a745;
+            font-size: 1.05rem;
+            font-weight: 600;
+            margin-top: 22px;
+            margin-bottom: 8px;
+        }
+
+        .item-heading {
+            color: #0066cc;
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: 2px;
+        }
+
+        .item-dates {
+            font-size: 0.9rem;
+            color: #222222;
+            margin-bottom: 6px;
+        }
+
+        p, ul {
+            font-size: 0.95rem;
+            color: #222222;
         }
 
         ul {
             padding-left: 20px;
-            margin-top: 5px;
+            margin-bottom: 8px;
         }
 
         li {
-            margin-bottom: 4px;
+            margin-bottom: 3px;
+        }
+
+        .skills-used {
             font-size: 0.95rem;
-            color: #4a5568;
+            margin-top: 6px;
+            margin-bottom: 16px;
         }
 
-        .skills-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 12px;
+        a {
+            color: #0066cc;
+            text-decoration: none;
         }
 
-        .skill-category {
-            font-size: 0.95rem;
-        }
-
-        .skill-category strong {
-            color: #2d3748;
-        }
-
-        @media (max-width: 600px) {
-            .resume-container {
-                padding: 20px;
-            }
-            .item-header {
-                flex-direction: column;
-            }
+        a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
 
     <div class="resume-container">
-        <!-- Header -->
-        <header>
-            <h1>Akagra Pandey</h1>
-            <div class="subtitle">B.Tech in Computer Science & Engineering (AI & ML) — 5th Semester</div>
-            <div class="contact-info">
-                <span>📞 <a href="tel:885115198">885115198</a></span>
-                <span>📧 <a href="mailto:akagrapandey123@gmail.com">akagrapandey123@gmail.com</a></span>
-                <span>📍 Greater Noida, India</span>
-                <span>🔗 <a href="https://github.com/akagrapandey123-png" target="_blank">github.com/akagrapandey123-png</a></span>
-            </div>
-        </header>
+        <!-- Name & Subtitle -->
+        <h1>Akagra Pandey</h1>
+        <div class="role-title">B.Tech CSE (AI & ML) Student - 5th Semester</div>
 
-        <!-- Summary -->
-        <section>
-            <h2>Summary</h2>
-            <p style="font-size: 0.95rem; color: #4a5568;">
-                Pre-final year Computer Science student specializing in Artificial Intelligence and Machine Learning. Passionate about developing data-driven applications, predictive models, and clean web interfaces. Proficient in Python, C/C++, Java, and ML frameworks, with a strong foundation in Data Structures and Algorithms.
-            </p>
-        </section>
+        <!-- Contact Information -->
+        <div class="contact-block">
+            <p>Galgotias University, Greater Noida</p>
+            <p>Uttar Pradesh, India</p>
+            <p>885115198</p>
+            <p>akagrapandey123@gmail.com</p>
+        </div>
+
+        <!-- Skills -->
+        <div class="section-title">Skills</div>
+        <p>Python, C/C++, Java, Machine Learning, Deep Learning, Data Structures & Algorithms, HTML, CSS, JavaScript, Git, Linux</p>
 
         <!-- Education -->
-        <section>
-            <h2>Education</h2>
-            <div class="item">
-                <div class="item-header">
-                    <span class="item-title">B.Tech in Computer Science & Engineering (AI & ML)</span>
-                    <span class="item-date">2024 – Present (5th Sem)</span>
-                </div>
-                <div class="item-sub">Galgotias University</div>
-                <ul>
-                    <li>Relevant Coursework: Data Structures & Algorithms, Machine Learning, Deep Learning, Database Management Systems (DBMS), Operating Systems.</li>
-                </ul>
-            </div>
-        </section>
+        <div class="section-title">Education</div>
+        <div class="item-heading">Galgotias University - B.Tech in Computer Science & Engineering (AI & ML)</div>
+        <div class="item-dates">2024 to Present (5th Semester)</div>
+        <p>Specializing in Artificial Intelligence and Machine Learning, studying core computer science and algorithms.</p>
 
-        <!-- Technical Skills -->
-        <section>
-            <h2>Technical Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <strong>Languages:</strong> Python, C, C++, Java, JavaScript, SQL, HTML5/CSS3
-                </div>
-                <div class="skill-category">
-                    <strong>AI/ML & Data:</strong> Scikit-Learn, TensorFlow/PyTorch, NumPy, Pandas, Matplotlib
-                </div>
-                <div class="skill-category">
-                    <strong>Developer Tools:</strong> Git, GitHub, Linux/Bash, VS Code, Jupyter Notebook
-                </div>
-                <div class="skill-category">
-                    <strong>Core Concepts:</strong> OOP, Data Structures & Algorithms, REST APIs, DBMS
-                </div>
-            </div>
-        </section>
+        <!-- Experience / Projects -->
+        <div class="section-title">Experience & Projects</div>
 
-        <!-- Projects -->
-        <section>
-            <h2>Academic & Personal Projects</h2>
-            
-            <div class="item">
-                <div class="item-header">
-                    <span class="item-title">AI-Powered Predictive Analysis Model</span>
-                    <span class="item-date">2026</span>
-                </div>
-                <div class="item-sub">Python, Scikit-Learn, Pandas, Matplotlib</div>
-                <ul>
-                    <li>Engineered a machine learning pipeline to preprocess raw datasets and train regression/classification models.</li>
-                    <li>Evaluated performance using metrics like accuracy, precision, and recall, optimizing hyperparameters to improve results by 12%.</li>
-                </ul>
-            </div>
+        <div class="item-heading">AI Predictive Model - Project Developer</div>
+        <div class="item-dates">2026 to Present</div>
+        <ul>
+            <li>Engineered end-to-end data preprocessing pipelines and evaluated predictive accuracy across diverse datasets.</li>
+            <li>Implemented machine learning algorithms using Python frameworks to optimize model performance.</li>
+            <li>Analyzed performance metrics and documented technical insights.</li>
+        </ul>
+        <div class="skills-used">Skills: Python, Scikit-Learn, Pandas, NumPy, Data Analysis</div>
 
-            <div class="item">
-                <div class="item-header">
-                    <span class="item-title">Interactive Single-Page Portfolio & Web App</span>
-                    <span class="item-date">2026</span>
-                </div>
-                <div class="item-sub">HTML5, CSS3, JavaScript, Git</div>
-                <ul>
-                    <li>Developed a responsive, lightweight single-page application focused on high performance and clean UI design.</li>
-                    <li>Implemented cross-browser compatibility and version-controlled the repository using Git and GitHub.</li>
-                </ul>
-            </div>
-        </section>
+        <div class="item-heading">Web & Portfolio Development - Frontend Developer</div>
+        <div class="item-dates">2026 to Present</div>
+        <ul>
+            <li>Designed and structured responsive single-page web applications.</li>
+            <li>Applied clean CSS layouts and cross-browser styling techniques.</li>
+            <li>Managed source code versions and releases using Git and GitHub.</li>
+        </ul>
+        <div class="skills-used">Skills: HTML5, CSS3, JavaScript, Git, GitHub</div>
 
-        <!-- Certifications & Achievements -->
-        <section>
-            <h2>Certifications & Extracurriculars</h2>
-            <ul>
-                <li><strong>Machine Learning Specialization:</strong> Completed foundational coursework in supervised & unsupervised learning.</li>
-                <li><strong>Open Source & Hackathons:</strong> Active participant in competitive programming and collaborative software projects.</li>
-            </ul>
-        </section>
+        <!-- Across the Internet -->
+        <div class="section-title">Across the Internet</div>
+        <p>
+            <a href="https://github.com/akagrapandey123-png" target="_blank">GitHub Profile</a> | 
+            <a href="https://linkedin.com" target="_blank">LinkedIn Profile</a>
+        </p>
     </div>
 
 </body>
