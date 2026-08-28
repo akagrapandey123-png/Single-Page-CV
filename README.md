@@ -1,6 +1,6 @@
 # Single-Page CV
 
-## Project URL
+Project URL: https://roadmap.sh/projects/single-page-cv
 
-https://akagrapandey123-png.github.io/Single-Page-CV/
+Live Demo: https://akagrapandey123-png.github.io/Single-Page-CV/
 
