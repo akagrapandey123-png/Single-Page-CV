@@ -1,228 +1,242 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Resume / CV</title>
-  <style>
-    /* Global Reset & Base Styles */
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akagra Pandey - Resume</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
 
-    body {
-      font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
-      background-color: #f4f4f6;
-      color: #333333;
-      line-height: 1.4;
-      font-size: 13.5px;
-    }
+        body {
+            background-color: #f4f6f9;
+            color: #333;
+            line-height: 1.6;
+            padding: 40px 20px;
+        }
 
-    /* Page Container */
-    .cv-container {
-      max-width: 850px;
-      margin: 20px auto;
-      background: #ffffff;
-      padding: 35px 40px;
-      border-radius: 6px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-    }
+        .resume-container {
+            max-width: 850px;
+            margin: 0 auto;
+            background: #ffffff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        }
 
-    /* Header Section */
-    header {
-      border-bottom: 2px solid #2563eb;
-      padding-bottom: 15px;
-      margin-bottom: 20px;
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-end;
-    }
+        header {
+            border-bottom: 2px solid #2b6cb0;
+            padding-bottom: 20px;
+            margin-bottom: 25px;
+        }
 
-    .name-title h1 {
-      font-size: 26px;
-      font-weight: 700;
-      color: #111827;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-    }
+        header h1 {
+            font-size: 2.2rem;
+            color: #1a365d;
+            letter-spacing: 0.5px;
+        }
 
-    .name-title h2 {
-      font-size: 15px;
-      font-weight: 500;
-      color: #2563eb;
-      margin-top: 2px;
-    }
+        header .subtitle {
+            font-size: 1.1rem;
+            color: #2b6cb0;
+            font-weight: 600;
+            margin-top: 4px;
+        }
 
-    .contact-info {
-      text-align: right;
-      font-size: 12.5px;
-      color: #4b5563;
-      line-height: 1.5;
-    }
+        .contact-info {
+            margin-top: 12px;
+            font-size: 0.95rem;
+            color: #4a5568;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
 
-    .contact-info a {
-      color: inherit;
-      text-decoration: none;
-    }
+        .contact-info a {
+            color: #2b6cb0;
+            text-decoration: none;
+        }
 
-    /* Layout Columns */
-    .content-grid {
-      display: grid;
-      grid-template-columns: 2fr 1fr;
-      gap: 30px;
-    }
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
 
-    /* Typography & Section Styling */
-    section {
-      margin-bottom: 18px;
-    }
+        section {
+            margin-bottom: 25px;
+        }
 
-    h3 {
-      font-size: 13px;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      color: #1f2937;
-      border-bottom: 1px solid #e5e7eb;
-      padding-bottom: 4px;
-      margin-bottom: 10px;
-      font-weight: 700;
-    }
+        h2 {
+            font-size: 1.3rem;
+            color: #1a365d;
+            border-bottom: 1.5px solid #e2e8f0;
+            padding-bottom: 6px;
+            margin-bottom: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
 
-    p {
-      color: #374151;
-      margin-bottom: 6px;
-    }
+        .item {
+            margin-bottom: 15px;
+        }
 
-    ul {
-      padding-left: 16px;
-      color: #374151;
-    }
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            font-weight: 600;
+        }
 
-    li {
-      margin-bottom: 4px;
-    }
+        .item-title {
+            font-size: 1rem;
+            color: #2d3748;
+        }
 
-    /* Experience & Education Entries */
-    .entry {
-      margin-bottom: 12px;
-    }
+        .item-date {
+            font-size: 0.85rem;
+            color: #718096;
+        }
 
-    .entry-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: baseline;
-      font-weight: 600;
-      color: #111827;
-    }
+        .item-sub {
+            font-size: 0.95rem;
+            color: #4a5568;
+            font-style: italic;
+            margin-bottom: 6px;
+        }
 
-    .entry-subtitle {
-      display: flex;
-      justify-content: space-between;
-      font-size: 12px;
-      color: #6b7280;
-      margin-bottom: 4px;
-      font-style: italic;
-    }
+        ul {
+            padding-left: 20px;
+            margin-top: 5px;
+        }
 
-    /* Skills Badges */
-    .skills-group {
-      margin-bottom: 10px;
-    }
+        li {
+            margin-bottom: 4px;
+            font-size: 0.95rem;
+            color: #4a5568;
+        }
 
-    .skills-group strong {
-      display: block;
-      font-size: 12px;
-      color: #4b5563;
-      margin-bottom: 4px;
-    }
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 12px;
+        }
 
-    .tags {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 5px;
-    }
+        .skill-category {
+            font-size: 0.95rem;
+        }
 
-    .tag {
-      background: #eff6ff;
-      color: #1d4ed8;
-      font-size: 11.5px;
-      padding: 2px 7px;
-      border-radius: 4px;
-      font-weight: 500;
-    }
+        .skill-category strong {
+            color: #2d3748;
+        }
 
-    /* Print Optimization (Single Page A4) */
-    @media print {
-      body {
-        background: transparent;
-      }
-      .cv-container {
-        margin: 0;
-        padding: 0;
-        box-shadow: none;
-        max-width: 100%;
-      }
-      @page {
-        size: A4;
-        margin: 1.2cm;
-      }
-    }
-  </style>
+        @media (max-width: 600px) {
+            .resume-container {
+                padding: 20px;
+            }
+            .item-header {
+                flex-direction: column;
+            }
+        }
+    </style>
 </head>
 <body>
 
-  <div class="cv-container">
-    <header>
-      <div class="name-title">
-        <h1>Alex Morgan</h1>
-        <h2>Senior Software Engineer</h2>
-      </div>
-      <div class="contact-info">
-        <div>alex.morgan@email.com</div>
-        <div>+1 (555) 019-2834</div>
-        <div>San Francisco, CA</div>
-        <div>linkedin.com/in/alexmorgan</div>
-      </div>
-    </header>
+    <div class="resume-container">
+        <!-- Header -->
+        <header>
+            <h1>Akagra Pandey</h1>
+            <div class="subtitle">B.Tech in Computer Science & Engineering (AI & ML) — 5th Semester</div>
+            <div class="contact-info">
+                <span>📞 <a href="tel:885115198">885115198</a></span>
+                <span>📧 <a href="mailto:akagrapandey123@gmail.com">akagrapandey123@gmail.com</a></span>
+                <span>📍 Greater Noida, India</span>
+                <span>🔗 <a href="https://github.com/akagrapandey123-png" target="_blank">github.com/akagrapandey123-png</a></span>
+            </div>
+        </header>
 
-    <div class="content-grid">
-      
-      <main>
+        <!-- Summary -->
         <section>
-          <h3>Profile</h3>
-          <p>
-            Results-driven software engineer with 5+ years of experience designing scalable web applications and distributed systems. Adept in cloud architecture, performance optimization, and leading agile development teams.
-          </p>
+            <h2>Summary</h2>
+            <p style="font-size: 0.95rem; color: #4a5568;">
+                Pre-final year Computer Science student specializing in Artificial Intelligence and Machine Learning. Passionate about developing data-driven applications, predictive models, and clean web interfaces. Proficient in Python, C/C++, Java, and ML frameworks, with a strong foundation in Data Structures and Algorithms.
+            </p>
         </section>
 
+        <!-- Education -->
         <section>
-          <h3>Experience</h3>
-          
-          <div class="entry">
-            <div class="entry-header">
-              <span>Lead Frontend Engineer</span>
-              <span>2023 – Present</span>
+            <h2>Education</h2>
+            <div class="item">
+                <div class="item-header">
+                    <span class="item-title">B.Tech in Computer Science & Engineering (AI & ML)</span>
+                    <span class="item-date">2024 – Present (5th Sem)</span>
+                </div>
+                <div class="item-sub">Galgotias University</div>
+                <ul>
+                    <li>Relevant Coursework: Data Structures & Algorithms, Machine Learning, Deep Learning, Database Management Systems (DBMS), Operating Systems.</li>
+                </ul>
             </div>
-            <div class="entry-subtitle">
-              <span>TechNova Solutions</span>
-              <span>San Francisco, CA</span>
-            </div>
-            <ul>
-              <li>Architected and deployed a modular micro-frontend architecture reducing load time by 38%.</li>
-              <li>Mentored 6 junior/mid-level engineers and established best testing practices.</li>
-            </ul>
-          </div>
+        </section>
 
-          <div class="entry">
-            <div class="entry-header">
-              <span>Full Stack Developer</span>
-              <span>2020 – 2023</span>
+        <!-- Technical Skills -->
+        <section>
+            <h2>Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <strong>Languages:</strong> Python, C, C++, Java, JavaScript, SQL, HTML5/CSS3
+                </div>
+                <div class="skill-category">
+                    <strong>AI/ML & Data:</strong> Scikit-Learn, TensorFlow/PyTorch, NumPy, Pandas, Matplotlib
+                </div>
+                <div class="skill-category">
+                    <strong>Developer Tools:</strong> Git, GitHub, Linux/Bash, VS Code, Jupyter Notebook
+                </div>
+                <div class="skill-category">
+                    <strong>Core Concepts:</strong> OOP, Data Structures & Algorithms, REST APIs, DBMS
+                </div>
             </div>
-            <div class="entry-subtitle">
-              <span>Apex Digital Lab</span>
-              <span>Austin, TX</span>
+        </section>
+
+        <!-- Projects -->
+        <section>
+            <h2>Academic & Personal Projects</h2>
+            
+            <div class="item">
+                <div class="item-header">
+                    <span class="item-title">AI-Powered Predictive Analysis Model</span>
+                    <span class="item-date">2026</span>
+                </div>
+                <div class="item-sub">Python, Scikit-Learn, Pandas, Matplotlib</div>
+                <ul>
+                    <li>Engineered a machine learning pipeline to preprocess raw datasets and train regression/classification models.</li>
+                    <li>Evaluated performance using metrics like accuracy, precision, and recall, optimizing hyperparameters to improve results by 12%.</li>
+                </ul>
             </div>
+
+            <div class="item">
+                <div class="item-header">
+                    <span class="item-title">Interactive Single-Page Portfolio & Web App</span>
+                    <span class="item-date">2026</span>
+                </div>
+                <div class="item-sub">HTML5, CSS3, JavaScript, Git</div>
+                <ul>
+                    <li>Developed a responsive, lightweight single-page application focused on high performance and clean UI design.</li>
+                    <li>Implemented cross-browser compatibility and version-controlled the repository using Git and GitHub.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Certifications & Achievements -->
+        <section>
+            <h2>Certifications & Extracurriculars</h2>
             <ul>
-              <li>Developed and maintained customer-facing APIs handling over 2M requests
+                <li><strong>Machine Learning Specialization:</strong> Completed foundational coursework in supervised & unsupervised learning.</li>
+                <li><strong>Open Source & Hackathons:</strong> Active participant in competitive programming and collaborative software projects.</li>
+            </ul>
+        </section>
+    </div>
+
+</body>
+</html>
